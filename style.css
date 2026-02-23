@@ -1,0 +1,186 @@
+
+:root {
+    --black: hsla(0, 0%, 20%, 1);
+    --darkGrey: hsla(0, 0%, 42%, 1);
+    --serif: 'Reckless Neue', 'Cormorant Garamond', Georgia, serif;
+    --sans: 'PP Neue Montreal', 'Switzer', system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .screen {
+            width: 100%;
+        }
+
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Background image */
+        .hero-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        /* Dark overlay */
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        /* Nav bar */
+        .nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.90);
+            backdrop-filter: blur(6px);
+        }
+
+        .navLogoImg {
+           display: flex;
+            width: auto;
+            height: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-hamburger {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+
+        .nav-hamburger span {
+            display: block;
+            width: 22px;
+            height: 1.5px;
+            background: #fff;
+        }
+
+        /* Hero content */
+        .hero-content {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0 24px;
+            z-index: 1;
+            min-height: 60vh;
+        }
+
+        .hero-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            width: 100%;
+        }
+
+        .hero-heading {
+            font-family: 'Reckless Neue', 'Cormorant Garamond', Georgia, serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 36px;
+            line-height: 1.05;
+            letter-spacing: -0.72px;
+            color: #fff;
+            width: 342px;
+        }
+
+        .hero-body {
+            font-family: 'PP Neue Montreal', 'Switzer', system-ui, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 1.4;
+            letter-spacing: 0.64px;
+            color: #fff;
+            width: 100%;
+        }
+
+        .sectionPadding4{
+            display: flex;
+            padding: 4rem 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3rem;
+            align-self: stretch;
+        }
+
+        h2.about{
+            color: var(--black);
+            font-family: Switzer;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .kpiImg{
+            width: 100%;
+            aspect-ratio: 56/65;
+            object-fit: cover;
+        }
+
+        .kpiGrid{
+           display: inline-grid;
+            row-gap: 2rem;
+            column-gap: 8px;
+            align-self: stretch;
+            grid-template-rows: repeat(2,fit-content(100%));
+            grid-template-columns: repeat(2,minmax(0,1fr));
+        }
+
+        .kpiSubHeader{
+            color: var(--darkGrey);
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.4;
+            leading-trim: both;
+            text-edge: cap;
+        }
+
+        .kpiHeader{
+            color: var(--black);
+            font-family: var(--serif);
+            font-size: 1.75rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: -0.03375rem;
+        }
+
+        
