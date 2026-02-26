@@ -1,3 +1,48 @@
+/* Font Faces - Local Fonts */
+@font-face {
+    font-family: 'Reckless Neue';
+    src: url('fonts/RecklessNeue-Book.woff2') format('woff2'),
+         url('fonts/RecklessNeue-Book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Reckless Neue';
+    src: url('fonts/RecklessNeue-BookItalic.woff2') format('woff2'),
+         url('fonts/RecklessNeue-BookItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('fonts/PPNeueMontreal-Light.woff2') format('woff2'),
+         url('fonts/PPNeueMontreal-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+         url('fonts/PPNeueMontreal-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+         url('fonts/PPNeueMontreal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     /* Colors */
@@ -16,8 +61,8 @@
     --overlay-dark: rgba(0, 0, 0, 0.65);
 
     /* Typography */
-    --serif: 'Reckless Neue', 'Cormorant Garamond', Georgia, serif;
-    --sans: 'PP Neue Montreal', 'Switzer', system-ui, sans-serif;
+    --serif: 'Reckless Neue', Georgia, serif;
+    --sans: 'PP Neue Montreal', system-ui, sans-serif;
 
     --font-weight-light: 300;
     --font-weight-normal: 400;
