@@ -31,16 +31,16 @@ gsap.from(".hero-body",{
     stagger: 0.3
 }); 
 
-gsap.from(".about",{
+gsap.from(".intro",{
     scrollTrigger: {
         trigger: ".hero-section",
-        start: "5% 5%",
+        start: "top 5%",
         toggleActions: "restart none none none",
         scrub: 1,
     },
     scale: 1,
     opacity: 0.5,
-    y: 50,
+    y: 20,
     ease: "power3.out",
     },)
 
@@ -145,9 +145,10 @@ gsap.from(".primary", {
 gsap.to(".footer", {
     scrollTrigger: {
         trigger: ".footer",
-        start: "center 60%",
+        start: "top 40%",
+        end: "top 0%",
         toggleActions: "restart pause reverse reset",
-        scrub: 1.5,
+        scrub: 1,
     },
     backgroundColor: "#000000",
     duration: 2.5,

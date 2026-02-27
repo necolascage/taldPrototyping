@@ -113,7 +113,7 @@
         }
 
 body {
-    background: var(--white);
+    background: var(--pureBlack);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -127,8 +127,9 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     overflow: hidden;
+    background-color: var(--white);
 }
 
 /* Background image */
@@ -198,7 +199,8 @@ body {
     justify-content: center;
     padding: 0 var(--space-md);
     z-index: var(--z-base);
-    min-height: 60vh;
+    min-height: 55vh;
+    
 }
 
 .hero-inner {
@@ -216,7 +218,7 @@ body {
     line-height: var(--line-height-tight);
     letter-spacing: -0.72px;
     color: var(--white);
-    width: 342px;
+    width: auto;
 }
 
 .hero-body {
@@ -238,6 +240,7 @@ body {
     gap: var(--space-xl);
     align-self: stretch;
     overflow: hidden;
+    background-color: var(--white);
 }
 /* About Section */
 .sectionIntro{
@@ -246,13 +249,13 @@ body {
     gap: var(--space-sm);
 }
 
-h2.about{
+h2.intro{
     color: var(--gray900);
-    font-family: var(--sans);
-    font-size: var(--font-size-base);
+    font-family: var(--serif);
+    font-size: var(--font-size-2xl);
     font-style: normal;
     font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-base);
+    line-height: var(--line-height-tight);
 }
 
 .kpiImg{
@@ -302,13 +305,21 @@ h2.about{
     align-self: stretch;
 
 }
+.sectionPadding4 h3.about{
+    color: var(--gray900);
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--line-height-base);
+}
 
 .darkBackground h3.about{
     font-family: var(--sans);
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    line-height: var(--line-height-base);
     color: var(--white);
 }
 
@@ -335,7 +346,7 @@ h2.about{
     font-size: var(--font-size-lg);
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    line-height: var(--line-height-base);
 }
 
 .teamCard p{
@@ -343,8 +354,11 @@ h2.about{
     font-size: var(--font-size-base);
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    line-height: var(--line-height-base);
     color: var(--gray200);
+}
+.teamRole{
+    margin-bottom: var(--space-md);
 }
 
 
@@ -356,7 +370,19 @@ h2.about{
     border-radius: var(--border-radius-md);
 }
 /* showcase section */
-.sectionPadding4 .subHeader{
+
+.sectionPadding5{
+    display: flex;
+    padding: var(--space-4xl) var(--space-md);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2xl);
+    align-self: stretch;
+    background-color: var(--white);
+}
+
+
+.sectionPadding5 .subHeader{
     color: var(--darkGrey);
     font-family: var(--sans);
     font-size: var(--font-size-xs);
@@ -366,13 +392,12 @@ h2.about{
     leading-trim: both;
     text-edge: cap;
 }
-.sectionPadding4 .about{
-    color: var(--gray900);
+.sectionPadding5 .about{
     font-family: var(--sans);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
+    font-weight: 300;
+    line-height: var(--line-height-base);
 }
 .projectCard{
     display: flex;
@@ -408,7 +433,7 @@ h2.about{
     font-size: var(--font-size-lg);
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    line-height: var(--line-height-base);
     color: var(--gray900);
 }
 
@@ -417,7 +442,7 @@ h2.about{
     font-size: var(--font-size-base);
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
+    line-height: var(--line-height-base);
     color: var(--darkGrey);
 }
 
@@ -544,11 +569,9 @@ button.primary:hover{
 }
 
 .footer-logo {
-    width: auto;
-    font-family: var(--serif);
-    font-size: var(--font-size-4xl);
-    font-weight: var(--font-weight-light);
-    color: var(--white);
+    width: 6.65894rem;
+    height: 1.85188rem;
+    flex-shrink: 0;
 }
 
 .footer-tagline {
@@ -559,6 +582,8 @@ button.primary:hover{
     color: var(--white);
     max-width: 50ch;
 }
+
+
 
 .footer-content {
     display: flex;
@@ -600,7 +625,7 @@ button.primary:hover{
 .footer-column-links {
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: var(--space-lg);
 }
 
 .footer-column-link {
